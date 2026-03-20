@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { navLinks } from "@/data/navigation";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -11,9 +12,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand column */}
           <div>
-            <p className="font-display text-2xl text-white mb-3">
-              Baby<span className="text-gold">Co.</span>
-            </p>
+            <div className="mb-3">
+              <Logo variant="light" className="text-4xl" />
+            </div>
             <p className="text-sm leading-relaxed">
               Bringing the world's finest baby brands to market. Your trusted
               partner in premium baby product import, wholesale, and design.

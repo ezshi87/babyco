@@ -71,15 +71,17 @@ export default function ContactDetails() {
         })}
       </ul>
 
-      {/* Map placeholder */}
-      <div className="rounded-2xl overflow-hidden border border-gold/15 bg-gradient-to-br from-background to-gold/5 aspect-[4/3] flex items-center justify-center">
-        <div className="text-center">
-          <MapPin size={32} className="text-gold/40 mx-auto mb-2" />
-          <p className="text-charcoal-light text-sm">Map Placeholder</p>
-          <p className="text-charcoal-light/60 text-xs mt-1">
-            Dubai, UAE
-          </p>
-        </div>
+      <div className="rounded-2xl overflow-hidden border border-gold/15 aspect-[4/3]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178509854868!2d55.27207131537956!3d25.1971978389225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sDubai%20World%20Trade%20Centre!5e0!3m2!1sen!2sae!4v1634567890123!5m2!1sen!2sae"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Baby Co. Location — Dubai, UAE"
+        />
       </div>
     </div>
   );

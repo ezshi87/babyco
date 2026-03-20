@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/data/navigation";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/ui/Logo";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -15,11 +16,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-gold/15">
       <nav className="container-max px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-display text-xl text-ink hover:text-gold transition-colors"
-        >
-          Baby<span className="text-gold">Co.</span>
+        <Link href="/" className="hover:opacity-75 transition-opacity">
+          <Logo variant="dark" className="text-3xl" />
         </Link>
 
         {/* Desktop links */}

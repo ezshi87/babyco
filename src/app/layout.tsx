@@ -7,6 +7,8 @@ import "@fontsource/inter/700.css";
 import "@fontsource/playfair-display/400.css";
 import "@fontsource/playfair-display/600.css";
 import "@fontsource/playfair-display/700.css";
+import "@fontsource/nunito/200.css";
+import "@fontsource/nunito/300.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 export default function CompanyStory() {
@@ -5,14 +6,13 @@ export default function CompanyStory() {
     <section className="section-padding bg-white">
       <div className="container-max">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image placeholder */}
-          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-gradient-to-br from-background to-gold/10 border border-gold/15 flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4">
-                <span className="font-display text-3xl text-gold">B</span>
-              </div>
-              <p className="text-charcoal-light text-sm">Company Image</p>
-            </div>
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&q=80"
+              alt="Baby Co. warehouse and team"
+              fill
+              className="object-cover"
+            />
           </div>
 
           {/* Content */}
